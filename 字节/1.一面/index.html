@@ -5,19 +5,270 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    /* 浮动布局
+    .container>div {
+      height: 200px;
+    }
+
+    .left {
+      width: 300px;
+      background: red;
+      float: left;
+    }
+
+    .right {
+      width: 300px;
+      background: yellow;
+      float: right;
+    }
+
+    .center {
+      overflow: hidden;
+      background: green;
+    } */
+
+    /* 圣杯布局
+    .container {
+      padding: 0 300px;
+    }
+
+    .container>div {
+      height: 200px;
+    }
+
+    .center,
+    .left,
+    .right {
+      float: left;
+    }
+
+    .center {
+      width: 100%;
+    }
+
+    .left,
+    .right {
+      width: 300px;
+      position: relative;
+    }
+
+    .left {
+      background: red;
+      margin-left: -100%;
+      left: -300px;
+    }
+
+    .right {
+      background: yellow;
+      margin-left: -300px;
+      left: 300px;
+    }
+
+    .center {
+      background: yellowgreen;
+    } */
+
+    /* 双飞翼布局
+    .container>div {
+      height: 200px;
+    }
+
+    .center-container,
+    .left,
+    .right {
+      float: left;
+    }
+
+    .left {
+      background: red;
+      width: 300px;
+      margin-left: -100%;
+    }
+
+    .right {
+      width: 300px;
+      background: yellow;
+      margin-left: -300px;
+    }
+
+    .center-container {
+      width: 100%;
+      background: green;
+
+    }
+
+    .center {
+      padding: 0 300px;
+    } */
+
+    /* flex布局
+    .container {
+      height: 200px;
+      display: flex;
+    }
+
+    .left,
+    .right {
+      width: 300px;
+    }
+
+    .left {
+      background: red;
+    }
+
+    .right {
+      background: yellow;
+    }
+
+    .center {
+      flex: 1;
+      background: green;
+    } */
+
+    /* table布局
+    .container {
+      width: 100%;
+      display: table;
+    }
+
+    .container>div {
+      height: 200px;
+      display: table-cell;
+    }
+
+    .left,
+    .right {
+      width: 300px;
+    }
+
+    .left {
+      background: red;
+    }
+
+    .right {
+      background: yellow;
+    }
+
+    .center {
+      background: green;
+    } */
+
+    /* 绝对定位布局
+    .container {
+      position: relative;
+    }
+
+    .container>div {
+      height: 200px;
+      position: absolute;
+    }
+
+    .left,
+    .right {
+      width: 300px;
+    }
+
+    .left {
+      left: 0;
+      background: red;
+    }
+
+    .right {
+      right: 0;
+      background: yellow;
+    }
+
+    .center {
+      left: 300px;
+      right: 300px;
+      background: green;
+    } */
+
+    /* 网格布局
+    .container {
+      display: grid;
+      width: 100%;
+      grid-template-rows: 200px;
+      grid-template-columns: 300px auto 300px;
+    }
+
+    .left {
+      background: red;
+    }
+
+    .center {
+      background: green;
+    }
+
+    .right {
+      background: yellow;
+    } */
+  </style>
 </head>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+
 
 <body>
-  <!-- <script src="./index.js"></script> -->
-  <script>
-    const domList = document.getElementsByTagName('div');
-    console.log('domList', domList);
+  <!-- 浮动布局
+  <div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center">浮动布局</div>
+  </div> -->
 
-  </script>
+
+  <!-- 圣杯布局
+  <div class="container">
+    <div class="center">
+      <h1>圣杯布局</h1>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div> -->
+
+  <!-- 双飞翼布局
+  <div class="container">
+    <div class="center-container">
+      <div class="center">
+        <h1>双飞翼布局</h1>
+      </div>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div> -->
+
+
+  <!-- flex布局
+  <div class="container">
+    <div class="left"></div>
+    <div class="center">flex布局</div>
+    <div class="right"></div>
+  </div> -->
+
+  <!-- table布局
+  <div class="container">
+    <div class="left"></div>
+    <div class="center">table布局</div>
+    <div class="right"></div>
+  </div> -->
+
+  <!-- 绝对定位布局
+  <div class="container">
+    <div class="left"></div>
+    <div class="center">
+      <h1>绝对定位布局</h1>
+    </div>
+    <div class="right"></div>
+  </div> -->
+
+  <!-- 网格布局
+  <div class="container">
+    <div class="left"></div>
+    <div class="center">
+      <h1>网格布局</h1>
+    </div>
+    <div class="right"></div>
+  </div> -->
 </body>
 
 </html>
