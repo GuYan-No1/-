@@ -6,6 +6,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    .one {
+      background: blue;
+    }
+
+    .container {
+      background: yellow;
+      border: 1px solid black;
+      overflow: auto;
+      /* float: left; */
+    }
+
+    /* .container::after {
+      content: '';
+      display: block;
+      clear: both;
+    } */
+
+    .content {
+      width: 100px;
+      height: 100px;
+      /* background-color: red; */
+      /* float: left; */
+      animation: myfirst 5s linear 2s infinite alternate;
+      /* Safari 与 Chrome: */
+      -webkit-animation: myfirst 5s linear 2s infinite alternate;
+      /* animation-name: myfirst;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-play-state: running;
+      -webkit-animation-name: myfirst;
+      -webkit-animation-duration: 5s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-play-state: running; */
+    }
+
+    @keyframes myfirst {
+
+      /* from {
+        background: red;
+      }
+
+      to {
+        background: green;
+      } */
+      0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    @-webkit-keyframes myfirst {
+      0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+
+      25% {
+        background: yellow;
+        left: 200px;
+        top: 0px;
+      }
+
+      50% {
+        background: blue;
+        left: 200px;
+        top: 200px;
+      }
+
+      75% {
+        background: green;
+        left: 0px;
+        top: 200px;
+      }
+
+      100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+      }
+    }
+
     /* 浮动布局
     .container>div {
       height: 200px;
@@ -269,6 +382,14 @@
     </div>
     <div class="right"></div>
   </div> -->
+  <div class="one">
+    <div class="love">曼哥</div>
+    <div class="container">
+      <div>我爱你</div>
+      <div class="content">王闯</div>
+    </div>
+  </div>
+
 </body>
 
 </html>
